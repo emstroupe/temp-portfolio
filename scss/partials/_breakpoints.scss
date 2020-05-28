@@ -1,0 +1,58 @@
+@media (min-width: $breakpoint-small) {
+    body {
+        font-size: 100%;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .container {
+        width: 100vw;
+        padding: 2em;
+    }
+    .section {
+    }
+
+    .objective,
+    .process {
+        padding-bottom: 2em;
+        margin: 0em;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    li {
+        line-height: 2em;
+    }
+    .row .column {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .subhead {
+        height: 100vh;
+        h1 {
+            padding-left: 1em;
+            padding-right: 1em;
+            top: 10vh;
+            left: 0;
+            width: 100vw;
+            font-size: 2em;
+        }
+        img {
+            height: 65vh;
+            width: 100vw;
+            object-fit: cover;
+            overflow: hidden;
+            top: 35vh;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-large) {
+    body {
+        font-size: 112.5%;
+    }
+    .container {
+        max-width: 1200px;
+    }
+}
