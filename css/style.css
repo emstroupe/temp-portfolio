@@ -183,7 +183,7 @@ section {
 .container {
   width: 100vw;
   margin: 0 auto;
-  padding: 0 0 0 0; }
+  padding: 2em; }
 
 @media (min-width: 768px) {
   .row {
@@ -478,8 +478,7 @@ section {
 
 @media (max-width: 768px) {
   .container {
-    width: 100vw;
-    padding: 2em; }
+    width: 100vw; }
   .objective,
   .process {
     padding-bottom: 2em;
