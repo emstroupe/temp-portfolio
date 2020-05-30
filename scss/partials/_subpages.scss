@@ -1,10 +1,10 @@
 .subhead {
     height: 100vh;
     .subtitle {
-        width: 40vw;
+        width: 35vw;
         position: absolute;
         bottom: 8vh;
-        left: 5vw;
+        left: 4vw;
         h1 {
             font-size: 2.25em;
         }
@@ -22,6 +22,7 @@
         position: absolute;
         top: 0;
         right: 0;
+        padding: 10px;
     }
 }
 
