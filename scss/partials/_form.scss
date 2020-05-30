@@ -8,7 +8,8 @@
 #form label {
     display: block;
     float: left;
-    width: 95px;
+    min-width: 95px;
+    width: 25%;
     border: 0px;
     @include sans-fontrules;
     color: white;
@@ -19,19 +20,21 @@
     display: block;
     float: left;
     border: 0px;
-    width: 330px;
+    width: 75%;
     @include serif-fontrules;
     color: white;
     padding: 5px;
     margin-bottom: 10px;
     opacity: 50%;
+    // background-color: rgba(255, 255, 225, 1);
+    // border: 1px solid red;
 }
 
 #form textarea {
     display: block;
     float: left;
     border: 0px;
-    width: 330px;
+    width: 75%;
     height: 140px;
     color: white;
     padding: 5px;
@@ -61,13 +64,14 @@
 #form textarea {
     background: no-repeat 10px 8px;
     opacity: 1;
+    border-bottom: 1px solid white;
 }
 
 #form input.submit {
     cursor: pointer;
     width: 90px;
     height: 40px;
-    float: left;
+    float: right;
     padding: 5px 5px 5px 5px;
     margin: 10px 0px 0px 95px;
     background: rgb(204, 203, 203);

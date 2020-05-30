@@ -1,6 +1,27 @@
+.hover-bars-footer {
+    width: 100vw;
+    height: 50vh;
+    .hover-grow {
+        width: 2vw;
+        &:hover {
+            width: 20vw;
+        }
+    }
+}
+
 .hover-bars {
     width: 100vw;
     height: 100vh;
+    .hover-grow {
+        width: 5vw;
+        &:hover {
+            width: 35vw;
+        }
+    }
+}
+
+.hover-bars-footer,
+.hover-bars {
     padding-top: 0;
     padding-right: 0;
     display: flex;
@@ -10,8 +31,9 @@
     .hover-text {
         position: absolute;
         bottom: 6vh;
-        left: 4vw;
+        left: 5vw;
         z-index: -1;
+
         h1 {
             margin-bottom: 2vh;
         }
@@ -42,7 +64,6 @@
     }
 
     .hover-grow {
-        width: 5vw;
         display: block;
         background-size: cover;
         background-position: center center;
@@ -57,14 +78,13 @@
             opacity: 0;
             position: absolute;
             bottom: 6vh;
-            left: 4vw;
+            left: 5vw;
             background: white;
         }
 
         &:hover {
             background-position: center;
             background-size: cover;
-            width: 35vw;
             opacity: 100%;
             .title {
                 opacity: 1;
