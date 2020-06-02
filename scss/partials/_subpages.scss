@@ -27,7 +27,6 @@
 
 .objective,
 .process {
-    border: 1px solid magenta;
     min-height: 70vh;
     .row {
         padding-top: 10vh;
@@ -75,7 +74,7 @@
 .parallax-sedaris,
 .parallax-scene,
 .parallax-untitled {
-    height: 80vh;
+    height: 70vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +89,7 @@
     background-image: url(../img/luis_multi.jpg);
 }
 .parallax-riopele {
-    background-image: url(../img/riopele_sketch.jpg);
+    background-image: url(../img/riopele_sketches_logo.png);
 }
 .parallax-sedaris {
     background-image: url(../img/sedaris_sketch.png);

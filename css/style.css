@@ -442,7 +442,6 @@ section {
 
 .objective,
 .process {
-  border: 1px solid magenta;
   min-height: 70vh; }
   .objective .row,
   .process .row {
@@ -482,7 +481,7 @@ section {
 .parallax-sedaris,
 .parallax-scene,
 .parallax-untitled {
-  height: 80vh;
+  height: 70vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -496,7 +495,7 @@ section {
   background-image: url(../img/luis_multi.jpg); }
 
 .parallax-riopele {
-  background-image: url(../img/riopele_sketch.jpg); }
+  background-image: url(../img/riopele_sketches_logo.png); }
 
 .parallax-sedaris {
   background-image: url(../img/sedaris_sketch.png); }
@@ -608,8 +607,7 @@ section {
     opacity: 0;
     padding-left: 1em;
     padding-right: 1em;
-    padding-bottom: 30vw;
-    background: white; }
+    padding-bottom: 30vw; }
   .site-header .site-nav.active {
     position: absolute;
     z-index: 10000; }
