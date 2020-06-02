@@ -9,27 +9,27 @@ body {
 /* HEADINGS */
 h1,
 h2,
-h3 {
+h3,
+h4 {
 }
 
 h1 {
     @include serif-fontrules;
     font-size: 3.5em;
     font-weight: 100;
+    max-width: 550px;
     color: $color-darkgrey;
 }
 
 h2 {
     @include sans-fontrules;
     font-size: 1.5em;
-    max-width: 550px;
     margin: 0;
 }
 
 h3 {
     @include serif-fontrules;
     font-size: 1em;
-    max-width: 550px;
     margin-top: 0em;
     margin-bottom: 0.5em;
 }
@@ -43,7 +43,7 @@ h4 {
 p {
     font-family: $serif-fontfamily;
     font-size: 0.9em;
-    max-width: 550px;
+    max-width: 575px;
     line-height: 1.4;
     color: $color-darkgrey;
     margin-top: 0.2em;
@@ -52,12 +52,12 @@ p {
 
 ul {
     margin: 0;
+    padding: 0;
 }
 
 li {
     @include sans-fontrules;
     @include li-rules;
-    font-family: $sans-fontfamily;
     font-weight: 200;
     list-style: none;
     color: $color-darkgrey;
@@ -69,7 +69,6 @@ li {
     font-weight: 300;
     font-size: 1em;
     color: $color-midgrey;
-    font-family: $sans-fontfamily;
 }
 li {
     p {
@@ -79,18 +78,8 @@ li {
 a {
     @include sans-fontrules;
     @include li-rules;
-    font-family: $sans-fontfamily;
     font-weight: 200;
     list-style: none;
     color: $color-darkgrey;
     text-decoration: none;
-    color: $color-midgrey;
-}
-
-hr {
-    width: 50px;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 1em;
-    border-width: 2px;
 }

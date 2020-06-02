@@ -12,6 +12,7 @@
 .hover-bars {
     width: 100vw;
     height: 100vh;
+    justify-content: flex-end;
     .hover-grow {
         width: 5vw;
         &:hover {
@@ -26,7 +27,7 @@
     padding-right: 10px;
     padding-bottom: 10px;
     display: flex;
-    justify-content: flex-end;
+
     position: relative;
 
     .hover-text {
