@@ -31,10 +31,18 @@
   }
 
   .info {
+    border: 1px solid red;
     position: absolute;
+    // justify-content: flex-end;
     right: 2.5vw;
-    bottom: 0.5;
+    // bottom: 0.5;
     text-align: right;
-    height: 200px;
+    // height: 200px;
+  }
+
+  #form {
+    border: 1px solid blue;
+    position: absolute;
+    left: 2.5vw;
   }
 }

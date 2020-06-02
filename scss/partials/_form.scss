@@ -1,8 +1,8 @@
+// See structure for positioning
+
 #form {
     width: 450px;
     margin: 0;
-    position: absolute;
-    left: 2.5vw;
 }
 
 #form label {
@@ -29,42 +29,41 @@
     // background-color: rgba(255, 255, 225, 1);
     // border: 1px solid red;
 }
-
-#form textarea {
-    display: block;
-    float: left;
-    border: 0px;
-    width: 75%;
-    height: 140px;
-    color: white;
-    padding: 5px;
-    resize: none;
+::placeholder {
+    text-align: right;
 }
 
+// #form textarea {
+//     display: block;
+//     float: left;
+//     border: 0px;
+//     width: 75%;
+//     height: 140px;
+//     color: white;
+//     padding: 5px;
+//     resize: none;
+//     border-bottom: 1px solid white;
+// }
+
+// #form input.message {
+//     display: block;
+//     float: left;
+//     border: 0px;
+//     width: 330px;
+//     height: 140px;
+//     color: white;
+//     padding: 5px;
+//     resize: none;
+//     border-bottom: 1px solid white;
+// }
+
+#form input.name,
+#form input.email,
+#form input.phone,
 #form input.message {
-    display: block;
-    float: left;
-    border: 0px;
-    width: 330px;
-    height: 140px;
-    color: white;
-    padding: 5px;
-    resize: none;
-}
-
-#form input.name {
     background: no-repeat 10px 8px;
     opacity: 1;
-}
-
-#form input.email {
-    background: no-repeat 10px 8px;
-    opacity: 1;
-}
-#form textarea {
-    background: no-repeat 10px 8px;
-    opacity: 1;
-    border-bottom: 1px solid white;
+    // border-bottom: 1px solid white;
 }
 
 #form input.submit {
@@ -74,9 +73,13 @@
     float: right;
     padding: 5px 5px 5px 5px;
     margin: 10px 0px 0px 95px;
-    background: rgb(204, 203, 203);
-    color: black;
+    background-color: $color-black;
     @include sans-fontrules;
+    color: white;
+    // background: rgb(204, 203, 203);
+    // color: black;
+    border: 1px solid white;
+    // @include sans-fontrules;
     font-size: 0.95em;
     line-height: 1.2em;
     font-weight: 100;
