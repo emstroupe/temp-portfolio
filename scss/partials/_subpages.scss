@@ -27,7 +27,9 @@
 
 .objective,
 .process {
-    min-height: 70vh;
+    min-height: 95vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     .row {
         padding-top: 10vh;
     }
@@ -47,13 +49,17 @@
         line-height: 2em;
         text-align: right;
     }
+    img {
+        // max-width: 500px;
+    }
 }
-
-// .process {
-//     li {
-//         margin-top: 2em;
-//     }
-// }
+.process {
+    p {
+        text-align: right;
+    }
+    .column.two-thirds {
+    }
+}
 
 .gallery {
     padding: 5px;
@@ -71,10 +77,11 @@
 .parallax-jones,
 .parallax-luis,
 .parallax-riopele,
+.parallax-riopele-2,
 .parallax-sedaris,
 .parallax-scene,
 .parallax-untitled {
-    height: 70vh;
+    height: 60vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,6 +98,9 @@
 .parallax-riopele {
     background-image: url(../img/riopele_sketches_logo.png);
 }
+.parallax-riopele-2 {
+    background-image: url(../img/riopele.sketches.dimensions.png);
+}
 .parallax-sedaris {
     background-image: url(../img/sedaris_sketch.png);
 }
@@ -99,4 +109,46 @@
 }
 .parallax-untitled {
     background-image: url(../img/untitled_sketch.jpg);
+}
+
+.view {
+    border: 1px solid orange;
+    .row {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-bottom: 10vh;
+    }
+    .column.two-thirds {
+        display: inline-block;
+    }
+}
+
+.select,
+.select-right,
+.select-middle {
+    img {
+        margin: auto;
+        vertical-align: middle;
+        display: inline-block;
+        max-width: 120px;
+    }
+}
+.select {
+    img {
+        padding-right: 15px;
+    }
+}
+
+.select-right {
+    float: right;
+    img {
+        padding-left: 15px;
+    }
+}
+
+a {
+    @include sans-fontrules;
+    font-size: 0.9em;
+    letter-spacing: 0.25em;
+    vertical-align: middle;
 }

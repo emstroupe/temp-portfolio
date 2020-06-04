@@ -34,16 +34,20 @@
         position: absolute;
         transform: rotate(-90deg) translate(-100%);
         transform-origin: top left;
-        width: 94vh;
+        width: 100vh;
         list-style: none;
-        margin-left: 1.5vw;
+        margin-top: none;
+        // margin-left: 1.5vw;
+        padding-top: 2em;
+        padding-left: 2em;
+        padding-bottom: 2em;
     }
     li {
         float: left;
         opacity: 0;
         padding-left: 1em;
         padding-right: 1em;
-        padding-bottom: 30vw;
+        // padding-bottom: 30vw;
         // background: white;
     }
 
@@ -52,7 +56,8 @@
         z-index: 10000;
         ul {
             transition: all 0.4s cubic-bezier(0, 1, 1, 1);
-            padding-bottom: 37vw;
+            background: white;
+            // box-shadow: 0 0 100px 100px rgba(255, 255, 255, 1);
         }
         li {
             transition: all 0.4s cubic-bezier(0, 1, 1, 1);

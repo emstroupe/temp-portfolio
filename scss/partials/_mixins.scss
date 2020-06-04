@@ -1,7 +1,7 @@
 @mixin sans-fontrules {
     font-family: $sans-fontfamily;
     text-transform: uppercase;
-    letter-spacing: 0.13em;
+    letter-spacing: 0.2em;
     font-weight: normal;
     color: $color-text-body;
 }

@@ -53,3 +53,11 @@
     max-width: 500px;
   }
 }
+
+#about {
+  min-height: 70vh;
+  .row .column.one-third {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}

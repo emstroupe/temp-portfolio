@@ -1,10 +1,10 @@
 .hover-bars-footer {
-    width: 100vw;
+    width: 70%;
     height: 50vh;
     .hover-grow {
-        width: 2vw;
+        width: 7%;
         &:hover {
-            width: 20vw;
+            width: 100%;
         }
     }
 }
@@ -12,6 +12,9 @@
 .hover-bars {
     width: 100vw;
     height: 100vh;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     justify-content: flex-end;
     .hover-grow {
         width: 5vw;
@@ -23,19 +26,13 @@
 
 .hover-bars-footer,
 .hover-bars {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
     display: flex;
-
     position: relative;
-
     .hover-text {
         position: absolute;
         bottom: 6vh;
         left: 5vw;
         z-index: -1;
-
         h1 {
             margin-bottom: 2vh;
         }

@@ -5,6 +5,16 @@
 }
 
 @media (max-width: $breakpoint-small) {
+    .view {
+        .column.two-thirds {
+            width: 100%;
+        }
+        .hover-bars-footer {
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+            width: 100%;
+        }
+    }
     .row .column {
         padding-left: 0;
         padding-right: 0;
@@ -19,20 +29,22 @@
 
     .site-header .site-nav {
         ul {
-            width: 60vh;
-            margin-top: 0;
-            list-style: none;
-            padding-top: 0em;
+            width: 65vh;
+            padding-top: 1em;
             padding-left: 1em;
+            padding-bottom: 1em;
         }
-        li {
-            float: left;
-            opacity: 0;
-            padding-left: 1.5em;
-            padding-right: 1.5em;
+        &.active {
+            ul {
+                background: transparent;
+            }
         }
     }
 
+    .menu-button {
+        top: 1em;
+        left: 1em;
+    }
     .site-footer {
         .row {
             padding-left: 5vw;
@@ -45,22 +57,21 @@
     }
 
     .subhead {
-        height: 100vh;
+        height: 75vh;
         .subtitle {
-            padding-left: 1.5em;
-            padding-right: 1.5em;
-            top: 70vh;
             width: 100vw;
+            top: 70vh;
+            padding-left: 5vw;
             left: 0;
-            padding: auto;
             h1 {
-                font-size: 2em;
+                font-size: 1.8em;
+                max-width: 450px;
             }
             h2 {
+                // opacity: 0;
                 font-size: 1.5em;
             }
         }
-
         img {
             height: 65vh;
             width: 100vw;
@@ -69,20 +80,75 @@
             top: 0;
         }
     }
-
+    .about,
     .objective,
     .process {
-        padding-bottom: 2em;
+        padding-top: 3vh;
+        padding-bottom: 5vh;
+        min-height: 0;
         margin: 0em;
-        padding-left: 0em;
-        padding-right: 0em;
+
+        .row {
+            padding-top: 0;
+            width: 100%;
+        }
+        .row .column.one-third {
+            padding-left: 0;
+            padding-right: 0;
+        }
         .row .column.two-thirds {
-            padding-left: 5vw;
-            padding-right: 5vw;
+            padding-left: 0;
+            padding-right: 0;
         }
         h3 {
-            font-size: 1.5em;
+            padding-left: 5vw;
+            max-width: 450px;
+            font-size: 1.25em;
+            padding-top: 5vh;
+            color: $color-midgrey;
         }
+        p {
+            padding-left: 5vw;
+            max-width: 450px;
+        }
+        ul {
+            padding-left: 5vw;
+            max-width: 90%;
+        }
+        li {
+            // text-align: left;
+        }
+        img {
+            padding: 13%;
+            // padding-left: 20%;
+            // padding-right: 20%;
+        }
+    }
+
+    .objective {
+        ul {
+            opacity: 0;
+            font-size: 0;
+        }
+        p {
+            opacity: 0;
+            font-size: 0;
+        }
+    }
+    .gallery {
+        padding: 0;
+        img {
+            padding: 0;
+        }
+    }
+    .parallax-jones,
+    .parallax-luis,
+    .parallax-riopele,
+    .parallax-riopele-2,
+    .parallax-sedaris,
+    .parallax-scene,
+    .parallax-untitled {
+        height: 25vh;
     }
 }
 
